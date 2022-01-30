@@ -11,9 +11,9 @@ const main = () => {
         console.log("Success =====> ", res.getResult());
     })
 
-    const marks = [5, 46, 78, 19, 9, 7843548547, 7, 8]
+    const marks = [5, 46, 78, 19, 9, 89, 3, 4, 7, 12, 9, 8, 7]
 
-    const length = marks.length
+
 
     // marks.forEach(mark => {
     //     const request = new calc.AverageCalcRequest()
@@ -23,7 +23,7 @@ const main = () => {
 
     // })
 
-    for (i = 0; i < 7; i++) {
+    for (i = 0; i < marks.length; i++) {
         const request = new calc.AverageCalcRequest()
         // const mark = marks[i]
         const mark = i
