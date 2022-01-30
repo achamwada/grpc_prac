@@ -9,6 +9,7 @@
     "gen:protos": "protoc -I=. ./protos/*.proto --js_out=import_style=commonjs,binary:server --grpc_out=server --plugin=protoc-gen-grpc=`which grpc_tools_node_protoc_plugin`"
   },
   "dependencies": {
+    "google-protobuf": "^3.19.4",
     "grpc": "^1.24.11",
     "grpc-tools": "^1.11.2"
   },
