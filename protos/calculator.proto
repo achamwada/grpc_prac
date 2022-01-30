@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message AverageCalcRequest  {
+    int32 input_value = 1;
+}
+
+message AverageCalcResponse {
+    int32 result = 1;
+}
+
+service CalculatorService {
+    // Client streaming API
+    rpc CalculateAverage (stream AverageCalcRequest) returns (AverageCalcResponse){};
+}
